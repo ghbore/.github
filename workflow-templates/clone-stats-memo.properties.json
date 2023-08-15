@@ -1,0 +1,8 @@
+{
+    "name": "Repo clone stats memorizer",
+    "description": "memorize the clone stats to a gist for a repo",
+    "iconName": "octicon desktop-download",
+    "categories": [
+        "monitoring"
+    ]
+}
