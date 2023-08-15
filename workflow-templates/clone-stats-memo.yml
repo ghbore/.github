@@ -37,7 +37,7 @@ jobs:
       
       - name: update stats
         run: |
-          curl https://raw.githubusercontent.com/ghbore/.github/master/workflow-templates/clone-stats-memo.helper.py > helper.py
+          curl https://raw.githubusercontent.com/ghbore/.github/main/workflow-templates/clone-stats-memo.helper.py > helper.py
           python3 helper.py --name ${{ github.repository }} --old gist/*.json --patch patch.json --output new.json
           cp new.json gist/*.json
       
