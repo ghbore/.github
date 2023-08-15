@@ -52,8 +52,8 @@ def updater (name, old, patch, output, chunk_size):
         patch_uniques = patch_uniques[:-1]
         d_patch["count"] = sum(patch_counts)
         d_patch["uniques"] = sum(patch_uniques)
-        patch_counts = [str(i) for i in patch_counts]
-        patch_uniques = [str(i) for i in patch_uniques]
+    patch_counts = [str(i) for i in patch_counts]
+    patch_uniques = [str(i) for i in patch_uniques]
 
     if not patch_dates:
         with open(output, "w") as FH:
